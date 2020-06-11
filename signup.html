@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <title>Ristorante Con Fusion: About Us</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,6 +15,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
 
+    <title>LetFundMe - Digital Crowdfunding Platform</title>
 </head>
 
 <body>
@@ -33,98 +33,125 @@
                                 class="fa fa-compass"></span> Browse projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="./howitworks.html"><span
                                 class="fa fa-bullhorn"></span> How it works</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-coffee"></span>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-coffee"></span>
                             About us</a></li>
-                    <li class="nav-item"><a id="loginModalToggle" class="nav-link"><span class="fa fa-life-ring"></span>
+                    <li class="nav-item active"><a class="nav-link"><span class="fa fa-life-ring"></span>
                             Account</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">
-                        &times;
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="offset-sm-1 col-8 col-sm-5">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                        <input type="email" class="form-control form-control mr-1"
-                                            id="exampleInputEmail3" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group col-12">
-                                        <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                        <input type="password" class="form-control form-control mr-1"
-                                            id="exampleInputPassword3" placeholder="Password">
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox">
-                                            <label class="form-check-label"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <button type="submit" class="col-12 btn btn-primary mt-2">Sign in</button>
-                                    <button type="button" class="col-12 btn btn-secondary mt-2"
-                                        data-dismiss="modal">Cancel</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-4 col-sm-5">
-                            <div class="border-left border-dark">
-                                <a class="offset-1 col-10 btn btn-light mb-3"><i
-                                        class="fa fa-facebook fa-lg fa-border"></i></a>
-                                <a class="offset-1 col-10 btn btn-light mb-3"><i
-                                        class="fa fa-linkedin fa-lg fa-border"></i></a>
-                                <a class="offset-1 col-10 btn btn-light mb-3"><i
-                                        class="fa fa-twitter fa-lg fa-border"></i></a>
-                                <a class="offset-1 col-10 btn btn-light mb-3"><i
-                                        class="fa fa-envelope fa-lg fa-border"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <h6 class="mt-4">Need an account? Let's <a href="./signup.html">Sign Up</a></h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <header class="jumbotron">
         <div class="container">
             <div class="row">
-                <h1><span class="badge badge-dark">About us</span></h1>
+                <h1><span class="badge badge-dark">Sign up</span></h1>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="row row-header">
-            <div class="col-12 text-center">
-                <h2>Our Team</h2>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 text-center row-header">
+                <h2>Create your own Account</h2>
+            </div>
+            <div class="col-12 offset-md-2 col-md-8 feedback-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstname" class="col-md-3 col-form-label">First Name</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="firstname" name="firstname"
+                                placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastname" class="col-md-3 col-form-label">Last Name</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="lastname" name="lastname"
+                                placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="city" class="col-md-3 col-form-label">Address</label>
+                        <div class="col-4 col-md-3">
+                            <input type="text" class="form-control" id="city" name="city"
+                                placeholder="City">
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <input type="text" class="form-control" id="state" name="state"
+                                placeholder="State">
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <input type="text" class="form-control" id="province" name="province"
+                                placeholder="Province">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="country" class="col-md-3 col-form-label">Country</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="country" name="country"
+                                placeholder="Coutry">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="emailid" class="col-md-3 col-form-label">Email</label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="col-md-3 col-form-label">Account Password</label>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="profession" class="col-md-3 col-form-label">Profession</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="profession" name="profession"
+                                placeholder="Profession">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telnum" class="col-12 col-md-3 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areacode" name="areacode"
+                                placeholder="Area Code">
+                        </div>
+                        <div class="col-7 col-md-6">
+                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12 mt-4">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                <label class="form-check-label" for="approve">
+                                    <cite>I hereby, accepting all the <strong>Terms and Condions</strong> apply regarding creation of account.</cite>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-3 col-md-9">
+                            <button type="submit" class="col-md-7 btn btn-primary">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md">
             </div>
         </div>
-        <div class="row row-content">
-        </div>
+
         <div class="row justify-content-end">
             <div class="col-12 col-sm-5">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Browse projects</a></li>
                     <li class="breadcrumb-item"><a href="#">How it works</a></li>
-                    <li class="breadcrumb-item active">About us</li>
+                    <li class="breadcrumb-item"><a href="#">About us</a></li>
                 </ol>
             </div>
         </div>

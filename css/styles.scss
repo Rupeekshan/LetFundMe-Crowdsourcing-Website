@@ -1,0 +1,145 @@
+$lt-gray: rgb(240, 239, 239);
+$background-dark: #49274A;
+$background-sem-light: rgb(200, 160, 202);
+$background-light: rgba(202, 196, 196, 0.5);
+
+// Height variables
+$carousel-item-height: 300px;
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+.row-header{
+    @include zero-margin(30px,0px);
+    border-bottom: 2px ridge $background-dark;
+    background: $background-sem-light;
+    color: white;
+}
+
+.row-content {
+    @include zero-margin(10px,0px);
+    min-height:250px;
+    width: 100%;
+}
+
+.footer{
+    background-color: $background-light;
+    @include zero-margin(20px, 0px);
+}
+
+.jumbotron {
+    @include zero-margin(18px,15px);
+    background: $background-light;
+    color:floralwhite;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-dark {
+    background-color: $background-dark;
+}
+
+.tab-content {
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+
+.carousel {
+    background-image: url("./../img/back_bubble.jpg");
+    background-attachment: fixed;
+    background-position: center;
+
+    .carousel-item {
+        height: $carousel-item-height;
+        
+        img {
+            position: absolute;
+            top: 0px;
+            left: 10%;
+            min-height: 300px;
+            border-left: 20px solid $background-light;
+            border-right: 20px solid $background-light;
+        }
+        
+
+        .carousel-caption {
+            padding-left: 50%;
+            h1 {
+                font-size: 3.4rem;
+            }
+        }
+    }
+}
+
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.modal-header {
+    background: $background-dark;
+    
+    .close {
+        color: floralwhite;
+    }
+}
+
+.modal-title {
+    color: floralwhite;
+}
+
+.modal-body {
+    background: $background-light;
+}
+
+.nav-link {
+    margin-left: 15px;
+}
+
+.footer-social-links {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid $background-dark;
+
+    a {
+        margin-right: 10px;
+    }
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    padding-top: 10px;
+    background: $background-dark;
+
+    p {
+        color: floralwhite;
+    }
+}
+
+.feedback-body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background: $lt-gray;
+}
+
+.card-body {
+    blockquote {
+        min-height: 130px;
+    }
+}
